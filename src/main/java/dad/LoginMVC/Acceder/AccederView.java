@@ -46,25 +46,7 @@ public class AccederView extends VBox {
 		gridpane.addRow(2, new Label(""), checkbox);
 		
 		accederButton = new Button("Acceder");
-		accederButton.setPrefWidth(70);
-		accederButton.setPrefHeight(26);
-		accederButton.setStyle("-fx-border-radius: 3px;" +  "-fx-border-width: 1,5px; \r " );
-		accederButton.setOnMouseEntered(event -> {
-			accederButton.setStyle("-fx-background-color: #acd5e8; \r " + "-fx-border-color: #20a8d8; \r " + "-fx-border-width: 1,5px; \r " + "-fx-border-radius: 3px;");;});
-        // Restablecer bordes a su estado original cuando el ratón sale del botón
-		accederButton.setOnMouseExited(event -> {
-			accederButton.setStyle("-fx-border-radius: 3px;"+  "-fx-border-width: 1,5px; \r " );});
-		
 		cancelarButton = new Button("Cancelar");
-		cancelarButton.setPrefWidth(70);
-		cancelarButton.setPrefHeight(26);
-		cancelarButton.setStyle("-fx-border-radius: 3px;" +  "-fx-border-width: 1,5px; \r " );
-		cancelarButton.setOnMouseEntered(event -> {
-			cancelarButton.setStyle("-fx-background-color: #acd5e8; \r " + "-fx-border-color: #20a8d8; \r " + "-fx-border-width: 1,5px; \r " + "-fx-border-radius: 3px;");;});
-        // Restablecer bordes a su estado original cuando el ratón sale del botón
-		cancelarButton.setOnMouseExited(event -> {
-			cancelarButton.setStyle("-fx-border-radius: 3px;"+  "-fx-border-width: 1,5px; \r " );});
-		
 		
 		HBox hBox = new HBox(5, accederButton, cancelarButton);
 
